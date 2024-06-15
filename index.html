@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="logo">The tale of us</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">US</a></li>
+                    <li><a href="#gallery">Rizz</a></li>
+                    <li><a href="#memories">Memories</a></li>
+                    <li><a href="#interactive">Interactive</a></li>
+                    <li><a href="#love-letter">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+     <!-- Background Music -->
+     <audio id="background-music" loop>
+        <source src="Pheelz-Ft-Davido-Electricity-(TrendyBeatz.com).mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <section id="about">
+        <button id="music-button" onclick="toggleMusic()">Play Music</button>
+        <h2>My gorgeous princess</h2>
+        <div class="carousel">
+            <h3>3 things I love about you</h3>
+            <div class="photo-gallery">
+                <img src="ig1.png" alt="Photo 1">
+                <img src="ig2.png" alt="Photo 2">
+                <img src="ig3.jpg" alt="Photo 3">
+            </div>
+        </div>
+
+        <div class="quotes">
+            <h3>Ikaw ang pinakamagandang bulaklak sa hardin ng buhay ko</h3>
+            <p>Youre stunning</p>
+            <p>Very smart</p>
+            <p>and will prolly own a rice farm one day</p>
+            
+        </div>
+        
+    </section>
+    
+
+    <section id="gallery">
+        <h2>W RIZZ</h2>
+        <div class="photo-gallery">
+            <img src="IMG_1324.JPG" alt="Photo 1">
+            <img src="IMG_3270.jpg" alt="Photo 2">
+            <img src="Screenshot 2024-05-29 110905.png" alt="Photo 3">
+        </div>
+        <h3>Slideshow</h3>
+        <div class="slideshow">
+            <video controls>
+                <source src="bestthing.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls>
+                <source src="copy_5BD462B2-2BD0-4B28-8376-0A5736AC93D1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section id="memories">
+        <h2>Our Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>6 months</h3>
+                <p>You get to do this one yourself when i see you</p>
+            </div>
+            <div class="timeline-item">
+                <h3>1 year</h3>
+                <p>You are in basic traning on our one year anniversary. 
+                    <br>I will also be going to basic when you get done so at the end of everything when you get back. Let's celebrate together.
+                     <br>....................... Always and Forever</p>
+                     <div class="heart"></div>
+            </div>
+        </div>
+        
+        <div class="journal">
+            <h3>Notes</h3>
+            <p>You'll know when i am back from basic</p>
+            <p>Dont be worried its a good suprise</p>
+        </div>
+    </section>
+
+    <section id="interactive">
+        <h2>Let's Have Fun!</h2>
+        <div class="games">
+            <h3>Games</h3>
+            <div class="game-item" onclick="openGamePopup('tic-tac-toe')">Tic-Tac-Toe</div>
+            <div class="game-item" onclick="openQuizPopup()">Memory Quiz</div>
+        </div>
+        <div class="message-board">
+            <h3>Message Board</h3>
+            <textarea placeholder="Leave a message..."></textarea>
+            <button>Submit</button>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Quaterly Memories</h2>
+        
+        <!-- Gallery for each month -->
+        <div class="month-gallery" id="month-1">
+            <h3>1st three months</h3>
+            <!-- Images for Month 1 -->
+            <div class="photo-gallery">
+                <img src="3.PNG" alt="Month 1 Image 1">
+                <img src="2.jpg" alt="Month 1 Image 2">
+                <!-- Add more images for Month 1 -->
+            </div>
+        </div>
+    
+        <!-- Repeat the above structure for Months 2 to 12 -->
+        <!-- Example for Month 2 -->
+        <div class="month-gallery" id="month-2">
+            <h3>2nd three months</h3>
+            <!-- Images for Month 2 -->
+            <div class="photo-gallery">
+                <img src="7.jpg" alt="Month 2 Image 1">
+                <img src="8.jpg" alt="Month 2 Image 2">
+                <!-- Add more images for Month 2 -->
+            </div>
+        </div>
+    
+        <!-- Repeat the above structure for Months 3 to 12 -->
+        <!-- Example for Month 3 -->
+        <div class="month-gallery" id="month-3">
+            <h3>3rd three months</h3>
+            <!-- Images for Month 3 -->
+            <div class="photo-gallery">
+                <img src="1.JPG" alt="Month 3 Image 1">
+                <img src="4.JPG" alt="Month 3 Image 2">
+                <!-- Add more images for Month 3 -->
+            </div>
+        </div>
+
+        <div class="month-gallery" id="month-3">
+            <h3>4th three months</h3>
+            <!-- Images for Month 3 -->
+            <div class="photo-gallery">
+                <img src="5.jpg" alt="Month 3 Image 1">
+                <img src="6.jpg" alt="Month 3 Image 2">
+                <!-- Add more images for Month 3 -->
+            </div>
+        </div>
+    
+        <!-- Repeat the structure above for Months 4 to 12 -->
+        <!-- Continue until Month 12 -->
+    
+    </section>
+    
+
+    <footer>
+        <p>Made with ❤️ </p>
+        <p>Rushed because code took longer than expected</p>
+    </footer>
+
+    <!-- Game Popup -->
+    <div id="game-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closeGamePopup()">&times;</span>
+            <iframe id="game-frame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <!-- Memory Quiz Popup -->
+    <div id="quiz-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closeQuizPopup()">&times;</span>
+            <div id="quiz-container"></div>
+            <button id="submit-quiz" onclick="submitQuiz()">Submit Quiz</button>
+        </div>
+    </div>
+
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
